@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -17,20 +16,20 @@ export default function QuantumNanoLab() {
     <div className="min-h-screen bg-gray-100 text-gray-900 p-6 space-y-12">
       {/* Header */}
       <header className="text-center space-y-4">
-       <img
-        src=""
-        alt="Dummy Logo"
-        className="mx-auto"
-        width="150"
-        height="50"
-        loading="lazy"
-       />
-       <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl font-bold"
-       >
+        <img
+          src=""
+          alt="Dummy Logo"
+          className="mx-auto"
+          width="150"
+          height="50"
+          loading="lazy"
+        />
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold"
+        >
           Quantum and Nanomaterials Research Lab – IIT Bombay
         </motion.h1>
         <p className="text-lg text-gray-600">
@@ -38,29 +37,26 @@ export default function QuantumNanoLab() {
         </p>
       </header>
 
-{/* Lab Image Section with Parallax Effect */}
-<section className="relative w-screen overflow-hidden h-[60vh]">
-  <img
-    src="https://scontent.fbom3-2.fna.fbcdn.net/v/t39.30808-6/480695372_1131616292311146_7076488553959395052_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=huRzKi7fi-cQ7kNvwFqudU9&_nc_oc=Adn_-DuWyioefrM1lIwEW_IaJ7Ku42loxAC-Tzoy0yOiCYIFIsF6S0Rm-LpkZCW94SI&_nc_zt=23&_nc_ht=scontent.fbom3-2.fna&_nc_gid=oCw1f_o9_gal-7c07uShSw&oh=00_AfFDswna_i6vLXQnGI1Ax8MAlj3SD8h3_z02xxnr58X8lQ&oe=68137D80"
-    alt="Lab Image"
-    className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out will-change-transform"
-  />
-</section>
-
-
+      {/* Lab Image Section */}
+      <section className="relative w-screen overflow-hidden h-[60vh]">
+        <img
+          src="https://scontent.fbom3-2.fna.fbcdn.net/v/t39.30808-6/480695372_1131616292311146_7076488553959395052_n.jpg"
+          alt="Lab Image"
+          className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out will-change-transform"
+        />
+      </section>
 
       {/* About Section */}
       <section className="grid grid-cols-1 md:grid-cols-1 gap-6 items-center">
-       <Card className="rounded-2xl shadow-lg">
-       <CardContent className="p-6">
-       <h2 className="text-2xl font-semibold mb-2">About Us</h2>
-       <p>
-        The Quantum and Nanomaterials Research Lab, led by <strong>Prof. M. Aslam</strong> at IIT Bombay investigates functional nanomaterials with a focus on energy, sensing, and biomedical applications. Research spans earth-abundant compounds like oxides and CZTS for photovoltaics, graphene-based materials for energy storage and water splitting, organic perovskites for optoelectronics, and magnetic nanoparticles for biomedical imaging. <strong>Emerging directions include exploring quantum phenomena in low-dimensional materials.</strong>
-       </p>
-       </CardContent>
-       </Card>
+        <div className="bg-white rounded-2xl shadow-lg">
+          <div className="p-6">
+            <h2 className="text-2xl font-semibold mb-2">About Us</h2>
+            <p>
+              The Quantum and Nanomaterials Research Lab, led by <strong>Prof. M. Aslam</strong> at IIT Bombay investigates functional nanomaterials with a focus on energy, sensing, and biomedical applications. Research spans earth-abundant compounds like oxides and CZTS for photovoltaics, graphene-based materials for energy storage and water splitting, organic perovskites for optoelectronics, and magnetic nanoparticles for biomedical imaging. <strong>Emerging directions include exploring quantum phenomena in low-dimensional materials.</strong>
+            </p>
+          </div>
+        </div>
       </section>
-
 
       {/* People Section */}
       <section className="space-y-8">
@@ -150,7 +146,7 @@ export default function QuantumNanoLab() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 pt-8">
-        © 2025  Quantum and Nanomaterials Research Lab – IIT Bombay. All rights reserved.
+        © 2025 Quantum and Nanomaterials Research Lab – IIT Bombay. All rights reserved.
       </footer>
     </div>
   );
